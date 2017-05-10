@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(127);
+  background(51);
   // Draw a circle
   strokeWeight(2);
   stroke(r, g, b);

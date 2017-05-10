@@ -6,6 +6,7 @@
     "start": "lr-http-server -p 4000 -w *.js,*.css,*.html"
   },
   "devDependencies": {
-    "lr-http-server": "~0.1.2"
+    "p5": "^0.5.9",
+    "lr-http-server": "^0.1.5"
   }
 }
