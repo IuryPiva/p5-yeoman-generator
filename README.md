@@ -10,7 +10,6 @@ A [yeoman](http://yeoman.io) generator for a p5 project
 You will need to
 
 - Install nodejs from https://nodejs.org/
-- Install bower `npm install bower -g`
 - Install yo `npm install yo -g`
 - Install this p5 generator `npm install -g generator-p5`
 
@@ -23,12 +22,6 @@ From the command line
 - `mkdir your-project-dir`
 - `cd your-project-dir`
 - `yo p5`
-
-## Running the Server
-
-From the command line
-
-- `npm start`
 
 ## License
 
