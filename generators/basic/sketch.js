@@ -1,3 +1,5 @@
+/// <reference types="p5" />
+
 // for red, green, and blue color values
 var r, g, b;
 
