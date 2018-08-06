@@ -1,4 +1,4 @@
-/// <reference types="p5" />
+/// <reference path="p5.global-mode.d.ts" />
 
 // for red, green, and blue color values
 var r, g, b;
