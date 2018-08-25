@@ -1,6 +1,11 @@
+// Type definitions for p5 0.6
+// Project: https://github.com/processing/p5.js
+// Definitions by: p5-types <https://github.com/p5-types>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
 // This file was auto-generated. Please do not edit it.
 
-///<reference path="p5.d.ts" />
+///<reference path="index.d.ts" />
 
 
 // Properties from p5
@@ -583,7 +588,7 @@ declare function colorMode(mode: COLOR_MODE, max?: number): p5;
  *   @param [maxA] range for the alpha
  *   @chainable
  */
-declare function colorMode(mode: any, max1: number, max2: number, max3: number, maxA?: number): p5;
+declare function colorMode(mode: UNKNOWN_P5_CONSTANT, max1: number, max2: number, max3: number, maxA?: number): p5;
 
 /**
  *   Sets the color used to fill shapes. For example, 
@@ -1210,8 +1215,8 @@ declare function strokeWeight(weight: number): p5;
 
 // src/core/constants.js
 
-declare const P2D: 'p2d';
-declare const WEBGL: 'webgl';
+declare const P2D: P2D;
+declare const WEBGL: WEBGL;
 
 /**
  *   HALF_PI is a mathematical constant with the value 
@@ -1270,7 +1275,7 @@ declare const TWO_PI: number;
  *   calculates angles (either DEGREES or RADIANS).
  *
  */
-declare const DEGREES: 'degrees';
+declare const DEGREES: DEGREES;
 
 /**
  *   Constant to be used with angleMode() function, to 
@@ -1278,64 +1283,64 @@ declare const DEGREES: 'degrees';
  *   calculates angles (either RADIANS or DEGREES).
  *
  */
-declare const RADIANS: 'radians';
-declare const CORNER: 'corner';
-declare const CORNERS: 'corners';
-declare const RADIUS: 'radius';
-declare const RIGHT: 'right';
-declare const LEFT: 'left';
-declare const CENTER: 'center';
-declare const TOP: 'top';
-declare const BOTTOM: 'bottom';
-declare const BASELINE: 'alphabetic';
-declare const POINTS: 0x0000;
-declare const LINES: 0x0001;
-declare const LINE_STRIP: 0x0003;
-declare const LINE_LOOP: 0x0002;
-declare const TRIANGLES: 0x0004;
-declare const TRIANGLE_FAN: 0x0006;
-declare const TRIANGLE_STRIP: 0x0005;
-declare const QUADS: 'quads';
-declare const QUAD_STRIP: 'quad_strip';
-declare const CLOSE: 'close';
-declare const OPEN: 'open';
-declare const CHORD: 'chord';
-declare const PIE: 'pie';
-declare const PROJECT: 'square';
-declare const SQUARE: 'butt';
-declare const ROUND: 'round';
-declare const BEVEL: 'bevel';
-declare const MITER: 'miter';
-declare const RGB: 'rgb';
-declare const HSB: 'hsb';
-declare const HSL: 'hsl';
-declare const BLEND: 'source-over';
-declare const ADD: 'lighter';
-declare const DARKEST: 'darkest';
-declare const LIGHTEST: 'lighten';
-declare const DIFFERENCE: 'difference';
-declare const EXCLUSION: 'exclusion';
-declare const MULTIPLY: 'multiply';
-declare const SCREEN: 'screen';
-declare const REPLACE: 'copy';
-declare const OVERLAY: 'overlay';
-declare const HARD_LIGHT: 'hard-light';
-declare const SOFT_LIGHT: 'soft-light';
-declare const DODGE: 'color-dodge';
-declare const BURN: 'color-burn';
-declare const THRESHOLD: 'threshold';
-declare const GRAY: 'gray';
-declare const OPAQUE: 'opaque';
-declare const INVERT: 'invert';
-declare const POSTERIZE: 'posterize';
-declare const DILATE: 'dilate';
-declare const ERODE: 'erode';
-declare const BLUR: 'blur';
-declare const NORMAL: 'normal';
-declare const ITALIC: 'italic';
-declare const BOLD: 'bold';
-declare const LANDSCAPE: 'landscape';
-declare const PORTRAIT: 'portrait';
+declare const RADIANS: RADIANS;
+declare const CORNER: CORNER;
+declare const CORNERS: CORNERS;
+declare const RADIUS: RADIUS;
+declare const RIGHT: RIGHT;
+declare const LEFT: LEFT;
+declare const CENTER: CENTER;
+declare const TOP: TOP;
+declare const BOTTOM: BOTTOM;
+declare const BASELINE: BASELINE;
+declare const POINTS: POINTS;
+declare const LINES: LINES;
+declare const LINE_STRIP: LINE_STRIP;
+declare const LINE_LOOP: LINE_LOOP;
+declare const TRIANGLES: TRIANGLES;
+declare const TRIANGLE_FAN: TRIANGLE_FAN;
+declare const TRIANGLE_STRIP: TRIANGLE_STRIP;
+declare const QUADS: QUADS;
+declare const QUAD_STRIP: QUAD_STRIP;
+declare const CLOSE: CLOSE;
+declare const OPEN: OPEN;
+declare const CHORD: CHORD;
+declare const PIE: PIE;
+declare const PROJECT: PROJECT;
+declare const SQUARE: SQUARE;
+declare const ROUND: ROUND;
+declare const BEVEL: BEVEL;
+declare const MITER: MITER;
+declare const RGB: RGB;
+declare const HSB: HSB;
+declare const HSL: HSL;
+declare const BLEND: BLEND;
+declare const ADD: ADD;
+declare const DARKEST: DARKEST;
+declare const LIGHTEST: LIGHTEST;
+declare const DIFFERENCE: DIFFERENCE;
+declare const EXCLUSION: EXCLUSION;
+declare const MULTIPLY: MULTIPLY;
+declare const SCREEN: SCREEN;
+declare const REPLACE: REPLACE;
+declare const OVERLAY: OVERLAY;
+declare const HARD_LIGHT: HARD_LIGHT;
+declare const SOFT_LIGHT: SOFT_LIGHT;
+declare const DODGE: DODGE;
+declare const BURN: BURN;
+declare const THRESHOLD: THRESHOLD;
+declare const GRAY: GRAY;
+declare const OPAQUE: OPAQUE;
+declare const INVERT: INVERT;
+declare const POSTERIZE: POSTERIZE;
+declare const DILATE: DILATE;
+declare const ERODE: ERODE;
+declare const BLUR: BLUR;
+declare const NORMAL: NORMAL;
+declare const ITALIC: ITALIC;
+declare const BOLD: BOLD;
+declare const LANDSCAPE: LANDSCAPE;
+declare const PORTRAIT: PORTRAIT;
 
 // src/core/core.js
 
@@ -1723,7 +1728,7 @@ declare var focused: boolean;
  *   cursor
  *   @param [y] the vertical active spot of the cursor
  */
-declare function cursor(type: string|any, x?: number, y?: number): void;
+declare function cursor(type: string|CURSOR_TYPE, x?: number, y?: number): void;
 
 /**
  *   Specifies the number of frames to be displayed 
@@ -2576,7 +2581,7 @@ declare function createNumberDict(object: object): p5.NumberDict;
  *   to 'undefined'. either LANDSCAPE or PORTRAIT.
  *
  */
-declare var deviceOrientation: any;
+declare var deviceOrientation: UNKNOWN_P5_CONSTANT;
 
 /**
  *   The system variable accelerationX always contains 
@@ -2945,7 +2950,7 @@ declare var pwinMouseY: number;
  *   track mouseButton differently.
  *
  */
-declare var mouseButton: any;
+declare var mouseButton: UNKNOWN_P5_CONSTANT;
 
 /**
  *   The boolean system variable mouseIsPressed is true 
@@ -3537,7 +3542,7 @@ declare function blend(srcImage: p5.Image, sx: number, sy: number, sw: number, s
  *   EXCLUSION, SCREEN, REPLACE, OVERLAY, HARD_LIGHT, 
  *   SOFT_LIGHT, DODGE, BURN, ADD or NORMAL.
  */
-declare function blend(sx: number, sy: number, sw: number, sh: number, dx: number, dy: number, dw: number, dh: number, blendMode: any): void;
+declare function blend(sx: number, sy: number, sw: number, sh: number, dx: number, dy: number, dw: number, dh: number, blendMode: UNKNOWN_P5_CONSTANT): void;
 
 /**
  *   Copies a region of the canvas to another region of 
@@ -6341,7 +6346,7 @@ declare function soundFormats(formats?: string): void;
  *   to search within
  *   @return p5.Element containing node found
  */
-declare function select(name: string, container?: string|p5.Element|HTMLElement): object|p5.Element|any;
+declare function select(name: string, container?: string|p5.Element|HTMLElement): object|p5.Element|null;
 
 /**
  *   Searches the page for elements with the given 
@@ -6606,7 +6611,7 @@ declare function createAudio(src?: string|string[], callback?: object): p5.Media
  *   has loaded
  *   @return capture video p5.Element
  */
-declare function createCapture(type: string|any|object, callback: Function): object|p5.Element;
+declare function createCapture(type: string|TYPE|object, callback: Function): object|p5.Element;
 
 /**
  *   Creates element with given tag in the DOM with 
@@ -6680,105 +6685,3 @@ declare function masterVolume(volume: number|object, rampTime?: number, timeFrom
  *
  */
 declare var soundOut: object;
-// Constants 
-type COLOR_MODE =
-      typeof RGB
-    | typeof HSB
-    | typeof HSL;
-
-type ARC_MODE =
-      typeof CHORD
-    | typeof PIE
-    | typeof OPEN;
-
-type ELLIPSE_MODE =
-      typeof CENTER
-    | typeof RADIUS
-    | typeof CORNER
-    | typeof CORNERS;
-
-type RECT_MODE =
-      typeof CORNER
-    | typeof CORNERS
-    | typeof CENTER
-    | typeof RADIUS;
-
-type STROKE_CAP =
-      typeof SQUARE
-    | typeof PROJECT
-    | typeof ROUND;
-
-type STROKE_JOIN =
-      typeof MITER
-    | typeof BEVEL
-    | typeof ROUND;
-
-type RENDERER =
-      typeof P2D
-    | typeof WEBGL;
-
-type BLEND_MODE =
-      typeof BLEND
-    | typeof DARKEST
-    | typeof LIGHTEST
-    | typeof DIFFERENCE
-    | typeof MULTIPLY
-    | typeof EXCLUSION
-    | typeof SCREEN
-    | typeof REPLACE
-    | typeof OVERLAY
-    | typeof HARD_LIGHT
-    | typeof SOFT_LIGHT
-    | typeof DODGE
-    | typeof BURN
-    | typeof ADD
-    | typeof NORMAL;
-
-type BEGIN_KIND =
-      typeof POINTS
-    | typeof LINES
-    | typeof TRIANGLES
-    | typeof TRIANGLE_FAN
-    | typeof TRIANGLE_STRIP
-    | typeof QUADS
-    | typeof QUAD_STRIP;
-
-type END_MODE =
-      typeof CLOSE;
-
-type IMAGE_MODE =
-      typeof CORNER
-    | typeof CORNERS
-    | typeof CENTER;
-
-type FILTER_TYPE =
-      typeof THRESHOLD
-    | typeof GRAY
-    | typeof OPAQUE
-    | typeof INVERT
-    | typeof POSTERIZE
-    | typeof BLUR
-    | typeof ERODE
-    | typeof DILATE
-    | typeof BLUR;
-
-type ANGLE_MODE =
-      typeof RADIANS
-    | typeof DEGREES;
-
-type HORIZ_ALIGN =
-      typeof LEFT
-    | typeof CENTER
-    | typeof RIGHT;
-
-type VERT_ALIGN =
-      typeof TOP
-    | typeof BOTTOM
-    | typeof CENTER
-    | typeof BASELINE;
-
-type THE_STYLE =
-      typeof NORMAL
-    | typeof ITALIC
-    | typeof BOLD;
-
